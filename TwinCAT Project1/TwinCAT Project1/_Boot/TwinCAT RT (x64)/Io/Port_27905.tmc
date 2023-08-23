@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<TcModuleClass>
+	<Translations/>
+	<DataTypes>
+		<DataType>
+			<Name GUID="{3DBE4583-6754-3359-DC72-46C1FF16958D}">Inputs_TYPE</Name>
+			<BitSize>128</BitSize>
+			<SubItem>
+				<Name>Frm0State</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Frm0WcState</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Frm0InputToggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>SlaveCount</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>80</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DevState</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>112</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D30DCBF5-35A8-F9CB-5DB5-8E9469BD330E}">Outputs_TYPE</Name>
+			<BitSize>128</BitSize>
+			<SubItem>
+				<Name>Frm0Ctrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Frm0WcCtrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DevCtrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>112</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D3FE8809-4622-B302-9032-C56076E1EDD0}">ECAT_EL1014_SM_D3FE8809</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>Channel_1_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_4_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{E74FEDAD-ACED-09ED-F221-8DB9B54FE0D3}">ECAT_EL2014_PDO_E74FEDAD</Name>
+			<BitSize>1</BitSize>
+			<SubItem>
+				<Name>Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{DD06C157-81FB-C1FA-F71E-73B01553FB33}">ECAT_EL2014_PDO_DD06C157</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>Channel_1</Name>
+				<Type GUID="{E74FEDAD-ACED-09ED-F221-8DB9B54FE0D3}">ECAT_EL2014_PDO_E74FEDAD</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2</Name>
+				<Type GUID="{E74FEDAD-ACED-09ED-F221-8DB9B54FE0D3}">ECAT_EL2014_PDO_E74FEDAD</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3</Name>
+				<Type GUID="{E74FEDAD-ACED-09ED-F221-8DB9B54FE0D3}">ECAT_EL2014_PDO_E74FEDAD</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel 4</Name>
+				<Type GUID="{E74FEDAD-ACED-09ED-F221-8DB9B54FE0D3}">ECAT_EL2014_PDO_E74FEDAD</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{CD18E41E-E5E3-677D-3F72-09940F1CBAAD}">ECAT_EL2014_SM_CD18E41E</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>DIG_Outputs</Name>
+				<Type GUID="{DD06C157-81FB-C1FA-F71E-73B01553FB33}">ECAT_EL2014_PDO_DD06C157</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{843CD647-A302-345A-579A-6413B005F0D9}">ECAT_EL2014_PDO_843CD647</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>Overtemperature</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Open_Load</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Overcurrent</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Short_Circuit_to_24V</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{0058D127-4619-E8ED-3739-DFADE4397C07}">ECAT_EL2014_PDO_0058D127</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Channel_1</Name>
+				<Type GUID="{843CD647-A302-345A-579A-6413B005F0D9}">ECAT_EL2014_PDO_843CD647</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2</Name>
+				<Type GUID="{843CD647-A302-345A-579A-6413B005F0D9}">ECAT_EL2014_PDO_843CD647</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3</Name>
+				<Type GUID="{843CD647-A302-345A-579A-6413B005F0D9}">ECAT_EL2014_PDO_843CD647</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel 4</Name>
+				<Type GUID="{843CD647-A302-345A-579A-6413B005F0D9}">ECAT_EL2014_PDO_843CD647</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>12</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D64FBA48-D35D-6FB2-A03C-0954C9E505F0}">ECAT_EL2014_PDO_D64FBA48</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>Common_Fault</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Overtemperature_Device</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Undervoltage</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Missing_Voltage</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{F625F4E0-A541-4A34-D5EE-399842A32C69}">ECAT_EL2014_SM_F625F4E0</Name>
+			<BitSize>20</BitSize>
+			<SubItem>
+				<Name>DIG_Diag_Inputs</Name>
+				<Type GUID="{0058D127-4619-E8ED-3739-DFADE4397C07}">ECAT_EL2014_PDO_0058D127</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DIG_Inputs_Device</Name>
+				<Type GUID="{D64FBA48-D35D-6FB2-A03C-0954C9E505F0}">ECAT_EL2014_PDO_D64FBA48</Type>
+				<BitSize>4</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{CF82AF90-F2CD-16ED-E0D7-B55C0476E073}">ECAT_EL6910_PDO_CF82AF90</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Safe_Logic_State</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Cycle_Counter</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{5F5A35DA-2688-3588-0EFB-4D7096E643C1}">ECAT_EL6910_SM_5F5A35DA</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>FSLOGIC_Inputs</Name>
+				<Type GUID="{CF82AF90-F2CD-16ED-E0D7-B55C0476E073}">ECAT_EL6910_PDO_CF82AF90</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{B2D2F1E3-9E89-7A39-EE75-AAED9BD1F21D}">ECAT_EL3102_PDO_B2D2F1E3</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Underrange</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Overrange</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Limit_11</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Limit_12</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Limit_21</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Limit_22</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Error</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Sync_error</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>13</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>TxPDO_State</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>14</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>TxPDO_Toggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D594CCF7-4220-77A3-77D4-E9301B1064FE}">ECAT_EL3102_PDO_D594CCF7</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{B2D2F1E3-9E89-7A39-EE75-AAED9BD1F21D}">ECAT_EL3102_PDO_B2D2F1E3</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Value</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{776D2E39-17D9-E8C2-0B2A-1DE93F830A2E}">ECAT_EL3102_SM_776D2E39</Name>
+			<BitSize>64</BitSize>
+			<SubItem>
+				<Name>AI_Standard_Channel_1</Name>
+				<Type GUID="{D594CCF7-4220-77A3-77D4-E9301B1064FE}">ECAT_EL3102_PDO_D594CCF7</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>AI_Standard_Channel_2</Name>
+				<Type GUID="{D594CCF7-4220-77A3-77D4-E9301B1064FE}">ECAT_EL3102_PDO_D594CCF7</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{7579B4D6-3D2B-2979-A16D-D2605FC13005}">ECAT_EL4102_SM_7579B4D6</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>Channel_1_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{FD8D0770-8E1E-BB8D-76DB-23D5779267D5}">ECAT_EL9512_PDO_FD8D0770</Name>
+			<BitSize>2</BitSize>
+			<SubItem>
+				<Name>Power_OK</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Overload</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{722EB09E-9E92-61B4-206B-33B02B612EA3}">ECAT_EL9512_SM_722EB09E</Name>
+			<BitSize>2</BitSize>
+			<SubItem>
+				<Name>Status_Uo</Name>
+				<Type GUID="{FD8D0770-8E1E-BB8D-76DB-23D5779267D5}">ECAT_EL9512_PDO_FD8D0770</Type>
+				<BitSize>2</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{1741880E-7591-F7B8-F1EF-C5108DCAED8E}">ECAT_EL6090_PDO_1741880E</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>Value_row_1</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Value_row_2</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D13284A9-17DD-890F-6403-B217EA7C75DE}">ECAT_EL6090_SM_D13284A9</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>DIS_Outputs</Name>
+				<Type GUID="{1741880E-7591-F7B8-F1EF-C5108DCAED8E}">ECAT_EL6090_PDO_1741880E</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{617356A8-EE0C-9EFC-8ADC-3EA474541AA6}">ECAT_EL6090_PDO_617356A8</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Up</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Down</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Left</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Right</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Enter</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>TxPDO_Toggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{285575FF-80F3-F9B6-D7EB-8AEA67E40B5A}">ECAT_EL6090_PDO_285575FF</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{617356A8-EE0C-9EFC-8ADC-3EA474541AA6}">ECAT_EL6090_PDO_617356A8</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{11620CDC-24F7-4A08-6365-CFF7EF16CDD6}">ECAT_EL6090_SM_11620CDC</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>DIS_Inputs</Name>
+				<Type GUID="{285575FF-80F3-F9B6-D7EB-8AEA67E40B5A}">ECAT_EL6090_PDO_285575FF</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{9EFD9CA3-92A9-C04D-B4F3-03BD71B1005F}">ECAT_EK1818_SM_9EFD9CA3</Name>
+			<BitSize>4</BitSize>
+			<SubItem>
+				<Name>Channel_9_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_10_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_11_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_12_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{9B3163B5-D791-CA32-2166-904A057097AC}">ECAT_EK1818_SM_9B3163B5</Name>
+			<BitSize>8</BitSize>
+			<SubItem>
+				<Name>Channel_1_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_4_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_5_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_6_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_7_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_8_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>7</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{7936C772-4D36-DC06-8400-B0C78FBAC778}">ECAT_EL2889_SM_7936C772</Name>
+			<BitSize>8</BitSize>
+			<SubItem>
+				<Name>Channel_1_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_4_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_5_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_6_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_7_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_8_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>7</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{58E7611B-31A8-9670-044D-134A25BE1E95}">ECAT_EL2889_SM_58E7611B</Name>
+			<BitSize>8</BitSize>
+			<SubItem>
+				<Name>Channel_9_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_10_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_11_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_12_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_13_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_14_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_15_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_16_Output</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>7</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{C0527256-63F3-305C-AA54-EB5E927A4C09}">ECAT_EL1889_SM_C0527256</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Channel_1_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_2_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_3_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_4_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_5_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_6_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_7_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_8_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>7</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_9_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_10_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>9</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_11_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>10</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_12_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>11</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_13_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>12</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_14_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>13</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_15_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>14</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Channel_16_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{98601E5D-23FD-2BB6-A29C-4069FBB41DBE}">ECAT_EL6224_PDO_98601E5D</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Device_Diag</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>12</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Device_State</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{DD6C7949-F1E2-CDDB-AE8F-6D4E7C72BADD}">ECAT_EL6224_PDO_DD6C7949</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>State_Ch1</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected]]></Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>State_Ch2</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected]]></Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>State_Ch3</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected]]></Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>State_Ch4</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+				<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected]]></Comment>
+				<BitSize>8</BitSize>
+				<BitOffs>24</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{0F148A8F-A795-3E12-9540-D7C83D0E9BDC}">ECAT_EL6224_SM_0F148A8F</Name>
+			<BitSize>48</BitSize>
+			<SubItem>
+				<Name>DeviceState_Inputs_Device</Name>
+				<Type GUID="{98601E5D-23FD-2BB6-A29C-4069FBB41DBE}">ECAT_EL6224_PDO_98601E5D</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DeviceState_Inputs</Name>
+				<Type GUID="{DD6C7949-F1E2-CDDB-AE8F-6D4E7C72BADD}">ECAT_EL6224_PDO_DD6C7949</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{EF194D9D-6143-D15D-E61E-8C61021D260C}">ECAT_EL9110_SM_EF194D9D</Name>
+			<BitSize>1</BitSize>
+			<SubItem>
+				<Name>PowerOK_Input</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{B082B2E9-D2D2-8CDB-88B1-E505EE695241}">ECAT_EL7031_PDO_B082B2E9</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Enable_latch_extern_on_positive_edge</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Set_counter</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Enable_latch_extern_on_negative_edge</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{DE9618AB-2FEB-6F17-DF63-E50AED11F8C6}">ECAT_EL7031_PDO_DE9618AB</Name>
+			<BitSize>32</BitSize>
+			<SubItem>
+				<Name>Control</Name>
+				<Type GUID="{B082B2E9-D2D2-8CDB-88B1-E505EE695241}">ECAT_EL7031_PDO_B082B2E9</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Set_counter_value</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{85ECA736-8B58-BA1B-D187-89427C6BE31C}">ECAT_EL7031_PDO_85ECA736</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Enable</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Reset</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Reduce_torque</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{5A1783FD-D453-CC23-711D-94C591964B8C}">ECAT_EL7031_PDO_5A1783FD</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Control</Name>
+				<Type GUID="{85ECA736-8B58-BA1B-D187-89427C6BE31C}">ECAT_EL7031_PDO_85ECA736</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{C70F7A89-CD5D-DD83-76C4-BCBCAFE9A840}">ECAT_EL7031_PDO_C70F7A89</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Velocity</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000006}">INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{07258B1C-0A76-93B7-1268-CF8E59FB5341}">ECAT_EL7031_SM_07258B1C</Name>
+			<BitSize>64</BitSize>
+			<SubItem>
+				<Name>ENC_Control_compact</Name>
+				<Type GUID="{DE9618AB-2FEB-6F17-DF63-E50AED11F8C6}">ECAT_EL7031_PDO_DE9618AB</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>STM_Control</Name>
+				<Type GUID="{5A1783FD-D453-CC23-711D-94C591964B8C}">ECAT_EL7031_PDO_5A1783FD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>STM_Velocity</Name>
+				<Type GUID="{C70F7A89-CD5D-DD83-76C4-BCBCAFE9A840}">ECAT_EL7031_PDO_C70F7A89</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>48</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{2E44AF4C-1887-A6AF-ADE4-2374EC7FD34F}">ECAT_EL7031_PDO_2E44AF4C</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Latch_extern_valid</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Set_counter_done</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Counter_underflow</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Counter_overflow</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Status_of_extern_latch</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>12</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Sync_error</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>13</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>TxPDO_Toggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{4A847D8C-C7A9-EC90-358D-F5A55864505F}">ECAT_EL7031_PDO_4A847D8C</Name>
+			<BitSize>48</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{2E44AF4C-1887-A6AF-ADE4-2374EC7FD34F}">ECAT_EL7031_PDO_2E44AF4C</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Counter_value</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Latch_value</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{55ACBB09-9B9F-CC64-CFF8-6E499BFA18AC}">ECAT_EL7031_PDO_55ACBB09</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Ready_to_enable</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Ready</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>1</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Warning</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>2</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Error</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>3</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Moving_positive</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>4</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Moving_negative</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>5</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Torque_reduced</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>6</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Digital_input_1</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>11</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Digital_input_2</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>12</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>Sync_error</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>13</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>TxPDO_Toggle</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>15</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{4BB57184-65D1-7208-787C-2565F45DC755}">ECAT_EL7031_PDO_4BB57184</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{55ACBB09-9B9F-CC64-CFF8-6E499BFA18AC}">ECAT_EL7031_PDO_55ACBB09</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{D442663B-E695-1B91-A70A-E4F0EA2756A8}">ECAT_EL7031_SM_D442663B</Name>
+			<BitSize>64</BitSize>
+			<SubItem>
+				<Name>ENC_Status_compact</Name>
+				<Type GUID="{4A847D8C-C7A9-EC90-358D-F5A55864505F}">ECAT_EL7031_PDO_4A847D8C</Type>
+				<BitSize>48</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>STM_Status</Name>
+				<Type GUID="{4BB57184-65D1-7208-787C-2565F45DC755}">ECAT_EL7031_PDO_4BB57184</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>48</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{6AF069E0-F237-68EC-4DB5-49F94556B42D}">ECAT_EL7201_9014_SM_6AF069E0</Name>
+			<BitSize>48</BitSize>
+			<SubItem>
+				<Name>DRV_Controlword_Controlword</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<Comment><![CDATA[Bit 0 : Switch on
+Bit 1 : Enable voltage
+Bit 2 : reserved
+Bit 3 : Enable operation
+Bit 4 - 6 : reserved
+Bit 7 : Fault reset
+Bit 8 - 15 : reserved]]></Comment>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DRV_Target_velocity_Target_velocity</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000009}">DINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+		</DataType>
+		<DataType>
+			<Name GUID="{C6E5D939-F227-6BA3-E14A-8DEF1C02C339}">ECAT_EL7201_9014_SM_C6E5D939</Name>
+			<BitSize>48</BitSize>
+			<SubItem>
+				<Name>FB_Position_Position</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DRV_Statusword_Statusword</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<Comment><![CDATA[Bit 0 : Ready to switch on
+Bit 1 : Switched on
+Bit 2 : Operation enabled
+Bit 3 : Fault
+Bit 4 : reserved
+Bit 5 : reserved
+Bit 6 : Switch on disabled
+Bit 7 : Warning
+Bit 8 + 9 : reserved
+Bit 10 : TxPDOToggle
+Bit 11 : Internal limit active
+Bit 12 : Drive follows the command value
+Bit 13 : Input cycle counter
+Bit 14 - 15 : reserved]]></Comment>
+				<BitSize>16</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+		</DataType>
+	</DataTypes>
+	<Modules>
+		<Module TcSmClass="TComPlcObjDef">
+			<Name>Device 1 (EtherCAT)_Image</Name>
+			<DataAreas>
+				<DataArea>
+					<AreaNo AreaType="InputSrc" CreateSymbols="true">0</AreaNo>
+					<Symbol>
+						<Name>Inputs</Name>
+						<BaseType>Inputs_TYPE</BaseType>
+						<BitSize>128</BitSize>
+						<BitOffs>1520</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 2 (EL1014).SM_0</Name>
+						<BaseType>ECAT_EL1014_SM_D3FE8809</BaseType>
+						<BitSize>4</BitSize>
+						<BitOffs>154</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 3 (EL2014).SM_3</Name>
+						<BaseType>ECAT_EL2014_SM_F625F4E0</BaseType>
+						<BitSize>20</BitSize>
+						<BitOffs>106</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 4 (EL6910).SM_3</Name>
+						<BaseType>ECAT_EL6910_SM_5F5A35DA</BaseType>
+						<BitSize>16</BitSize>
+						<BitOffs>72</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 6 (EL3102).SM_3</Name>
+						<BaseType>ECAT_EL3102_SM_776D2E39</BaseType>
+						<BitSize>64</BitSize>
+						<BitOffs>140</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 8 (EL9512).SM_0</Name>
+						<BaseType>ECAT_EL9512_SM_722EB09E</BaseType>
+						<BitSize>2</BitSize>
+						<BitOffs>1236</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 9 (EL6090).SM_3</Name>
+						<BaseType>ECAT_EL6090_SM_11620CDC</BaseType>
+						<BitSize>16</BitSize>
+						<BitOffs>638</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).SM_1</Name>
+						<BaseType>ECAT_EK1818_SM_9B3163B5</BaseType>
+						<BitSize>8</BitSize>
+						<BitOffs>868</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 13 (EL1889).SM_0</Name>
+						<BaseType>ECAT_EL1889_SM_C0527256</BaseType>
+						<BitSize>16</BitSize>
+						<BitOffs>1238</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 15 (EL6224).SM_3</Name>
+						<BaseType>ECAT_EL6224_SM_0F148A8F</BaseType>
+						<BitSize>48</BitSize>
+						<BitOffs>148</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 16 (EL9110).SM_0</Name>
+						<BaseType>ECAT_EL9110_SM_EF194D9D</BaseType>
+						<BitSize>1</BitSize>
+						<BitOffs>1254</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 17 (EL7031).SM_3</Name>
+						<BaseType>ECAT_EL7031_SM_D442663B</BaseType>
+						<BitSize>64</BitSize>
+						<BitOffs>735</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 18 (EL7201-9014).SM_3</Name>
+						<BaseType>ECAT_EL7201_9014_SM_C6E5D939</BaseType>
+						<BitSize>48</BitSize>
+						<BitOffs>100</BitOffs>
+					</Symbol>
+				</DataArea>
+				<DataArea>
+					<AreaNo AreaType="OutputDst" CreateSymbols="true">1</AreaNo>
+					<Symbol>
+						<Name>Outputs</Name>
+						<BaseType>Outputs_TYPE</BaseType>
+						<BitSize>128</BitSize>
+						<BitOffs>1520</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 3 (EL2014).SM_2</Name>
+						<BaseType>ECAT_EL2014_SM_CD18E41E</BaseType>
+						<BitSize>4</BitSize>
+						<BitOffs>106</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 7 (EL4102).SM_2</Name>
+						<BaseType>ECAT_EL4102_SM_7579B4D6</BaseType>
+						<BitSize>32</BitSize>
+						<BitOffs>122</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 1 (EK1200).Term 9 (EL6090).SM_2</Name>
+						<BaseType>ECAT_EL6090_SM_D13284A9</BaseType>
+						<BitSize>32</BitSize>
+						<BitOffs>80</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).SM_0</Name>
+						<BaseType>ECAT_EK1818_SM_9EFD9CA3</BaseType>
+						<BitSize>4</BitSize>
+						<BitOffs>868</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 12 (EL2889).SM_0</Name>
+						<BaseType>ECAT_EL2889_SM_7936C772</BaseType>
+						<BitSize>8</BitSize>
+						<BitOffs>126</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 12 (EL2889).SM_1</Name>
+						<BaseType>ECAT_EL2889_SM_58E7611B</BaseType>
+						<BitSize>8</BitSize>
+						<BitOffs>127</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 17 (EL7031).SM_2</Name>
+						<BaseType>ECAT_EL7031_SM_07258B1C</BaseType>
+						<BitSize>64</BitSize>
+						<BitOffs>735</BitOffs>
+					</Symbol>
+					<Symbol>
+						<Name>Term 11 (EK1818).Term 18 (EL7201-9014).SM_2</Name>
+						<BaseType>ECAT_EL7201_9014_SM_6AF069E0</BaseType>
+						<BitSize>48</BitSize>
+						<BitOffs>100</BitOffs>
+					</Symbol>
+				</DataArea>
+				<DataArea>
+					<AreaNo AreaType="Internal" CreateSymbols="true">2</AreaNo>
+				</DataArea>
+			</DataAreas>
+		</Module>
+	</Modules>
+</TcModuleClass>
